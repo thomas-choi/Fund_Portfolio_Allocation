@@ -3,14 +3,14 @@ import multiprocessing as mp
 import math
 
 def worker(args):
-    print(f'work: ==>{args}<==\n')
+    # print(f'work: ==>{args}<==\n')
     data_chunk, process_data = args
     # print('worker:', data_chunk, ' , ', process_data)
-    return process_data(data_chunk)
+    return process_data(-1, data_chunk)
 
 def split_dataframe(data, num_chunks):
     chunk_size = math.ceil(len(data) / num_chunks)
-    print(f'split_data: chunk_size:{chunk_size}')
+    print(f'split_data: chunk_size:{chunk_size} from data.length={len(data)}')
     return [data[i:i + chunk_size] for i in range(0, len(data), chunk_size)]
 
 def run_pool(data, process_data, num_cpus=None):
@@ -21,7 +21,7 @@ def run_pool(data, process_data, num_cpus=None):
     print(f'num_cpus is {num_cpus}')
 
     data_chunks = split_dataframe(data, num_cpus)
-    print('data_chunks:\n', data_chunks)
+    # print('data_chunks:\n', data_chunks)
     # print([(chunk, process_data) for chunk in data_chunks])
     
     with mp.Pool(processes=num_cpus) as pool:

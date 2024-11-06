@@ -1,0 +1,57 @@
+ISIN,Product Name,Assets,Class,Sector,Type,Currency,Rate
+BMG1744V1037,Café de Coral Holdings Limited (0341.HK),0341.HK,Equity,Consumer Defensive,Stock,HKD,0.128205128205128
+HK0405033157,Yuexiu REIT (405 HK),0405.HK,Equity,Real Estate,RIT,HKD,0.128205128205128
+KYG459951003,Hopewell Highway Infrastructure Ltd (737 HK),0737.HK,Equity,Industrials,Stock,HKD,0.128205128205128
+HK0000055761,JPMorgan Pacific Technology Fund,0P00001DU6,Equity,Technology,Fund,USD,1
+HK0000201613,Schroder US Dollar Money Fund,0P00002C5C,Cash,Cash,Fund,USD,1
+LU0249410860,BlackRock Japan Flexible Equity Fund,0P00006OXK.T,Equity,Industrials,Fund,JPY,0.0066
+IE00B4VZPG27,GAM Star Cat Bond Fund,0P0000UIC0,Fixed Income,Municipal,Fund,USD,1
+IE0032590923,Principal Preferred Securities Fund,0P0000VP5F,Fixed Income,Financial Services,Fund,USD,1
+IE00B98FL735,Neuberger Senior Floating Rate Note Income Fund,0P0000YVJG,Fixed Income,Energy,Fund,USD,1
+LU0912192985,Julius Baer Global Excellence Equity,0P0000Z5AZ,Equity,Index,Fund,USD,1
+LU0965088593,Eastspring Japan Dynamic Fund,0P0000ZJFK,Equity,Industrials,Fund,USD,1
+LU1079021397,Julius Baer Fixed Income Emerging Markets Corporate,0P00013N6C,Fixed Income,Corporate,Fund,USD,1
+LU1670725776,M&G Optimal Fund,0P0001DFIZ,Fixed Income,Healthcare,Fund,USD,1
+HK0000421419,Income Partners High Yield Bond Fund,0P0001DHN3,Fixed Income,Corporate,Fund,USD,1
+LU2542757864,Eastspring Vietnam Equity Fund,0P0001Q87U,Equity,Financial Services,Fund,USD,1
+CNE100000981,China Railway Construction Ltd (1186 HK),1186.HK,Equity,Industrials,Stock,HKD,0.128205128205128
+KYG9830T1067,XiaoMi. (1810 HK),1810.HK,Equity,Technology,Stock,HKD,0.128205128205128
+HK0000291432,Samsung Oil ETF,3175.HK,Commodity,Energy,ETF,HKD,0.128205128205128
+HK0000656956,Samsung S&P High Dividend APAC ex NZ REITs ETF,3187.HK,Equity,Real Estate,ETF,HKD,0.128205128205128
+KYG017191142,Alibaba (9988 HK),9988.HK,Equity,Consumer Cyclical,Stock,HKD,0.128205128205128
+US00687A1079,Adidas stock - ADDY.US or ADS.DE,ADDYY,Equity,Consumer Cyclical,Stock,USD,1
+IE00BZ043R46,iShares Core Global Aggregate Bond ETF,AGGU.L,Fixed Income,International,ETF,USD,1
+US00214Q3020,ARK Genomic Revolution ETF,ARKG,Equity,Healthcare,ETF,USD,1
+US00214Q1040,ARK Innovative ETF,ARKK,Equity,Technology,ETF,USD,1
+US01609W1027,Alibaba (BABA US),BABA,Equity,Consumer Cyclical,Stock,USD,1
+IE00B3VWN393,iShares 3-7 Year Treasury Bond ETF,CSBGU7.SW,Fixed Income,Treasury,ETF,USD,1
+IE00BCRY6227,iShares USD Ultrashort Bond ETF,ERND.L,Fixed Income,Ultrashort,ETF,USD,1
+US78463V1070,SPDR Gold ETF,GLD,Commodity,Basic Materials,ETF,USD,1
+US46429B2676,iShares USD Treasury Bond ETF,GOVT,Fixed Income,Treasury,ETF,USD,1
+US46431W6066,iShares Interest Rate Hedged High Yield ETF,HYGH,Fixed Income,High Yield,ETF,USD,1
+IE00B74DQ490,iShares Global High Yield Corporate Bond ETF,HYLD.L,Fixed Income,Corporate,ETF,USD,1
+US78464A2841,SPRD Niven Bloomberg barclays High Yield Municipal Bond ETF,HYMB,Fixed Income,Municipal,ETF,USD,1
+US46435G6724,iShares Core International Aggregate Bond ETF,IAGG,Fixed Income,International,ETF,USD,1
+US46438F1012,iShares Bitcoin Trust ETF,IBIT,Crypto,ETF,ETF,USD,1
+IE00B14X4S71,iShares Treasury 1-3 Years ETF,IBTS.SW,Fixed Income,Treasury,ETF,USD,1
+US46435G3267,iShares Core International Developed Markets ETF,IDEV,Equity,Financial Services,ETF,USD,1
+IE00BSKRJZ44,iShares Treasury 20 years ETF,IDTL.L,Fixed Income,Treasury,ETF,USD,1
+IE00B1FZS798,iShares 7-10 US Treasury ETF,IDTM.L,Fixed Income,Treasury,ETF,USD,1
+IE00B2NPKV68,iShares JP Morgan EM Bond ETF,IEMB.L,Fixed Income,Treasury,ETF,USD,1
+IE00B3B8PX14,iShares Global Inflation Linked Government Bond ETF,IGIL.L,Fixed Income,Agency,ETF,USD,1
+US4642886463,iShares Treasury 1-5 Years ETF,IGSB,Fixed Income,Corporate,ETF,USD,1
+IE00B4PY7Y77,iShares USD Corporate High Yield ETF,IHYU.L,Fixed Income,Corporate,ETF,USD,1
+IE00B6R52143,iShares Agribusiness UCITS ETF,ISAG.L,Equity,Consumer Defensive,ETF,USD,1
+US46432F8591,iShares Core 1-5 Year USD Bond ETF,ISTB,Fixed Income,Real Estate,ETF,USD,1
+US4642874089,iShares S&P 500 Value ETF,IVE,Equity,Index,ETF,USD,1
+IE00B0M62Q58,iShares MSCI World UCITS ETF,IWRD.L,Equity,Technology,ETF,USD,1
+US47215P1066,JD.com (JD US),JDN.MX,Equity,Consumer Defensive,Stock,MXN,0.05
+IE0032895942,iShares USD Corporate Bonds ETF,LQDE.L,Fixed Income,Corporate,ETF,USD,1
+US53656F4173,Roundhill Ball Metaverse ETF,METV,Equity,Technology,ETF,USD,1
+US37954Y6730,Global X US Infrastructure,PAVE,Equity,Industrials,ETF,USD,1
+IE00BCRY6003,iShares Short Duration High Yield Corporate Bond,SDHY.L,Fixed Income,High Yield,ETF,USD,1
+US4642886794,iShares Short Treasury ETF,SHV,Fixed Income,Treasury,ETF,USD,1
+US46434V8607,iShares Treasury Floating ETF,TFLO,Fixed Income,Treasury,ETF,USD,1
+US91232N2071,"United States Oil Fund, LP ETF",USO,Commodity,Energy,ETF,USD,1
+US98980L1017,Zoom Video Communications Inc,ZM,Equity,Technology,Stock,USD,1
+HK0000897014,BOCHK All Weather HKD Money Mkt A1 HKD,0P0001Q45W.HK,Cash,Cash,Fund,HKD,0.128205128205128
