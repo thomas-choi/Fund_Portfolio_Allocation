@@ -54,4 +54,10 @@ US4642886794,iShares Short Treasury ETF,SHV,Fixed Income,Treasury,ETF,USD,1
 US46434V8607,iShares Treasury Floating ETF,TFLO,Fixed Income,Treasury,ETF,USD,1
 US91232N2071,"United States Oil Fund, LP ETF",USO,Commodity,Energy,ETF,USD,1
 US98980L1017,Zoom Video Communications Inc,ZM,Equity,Technology,Stock,USD,1
+US4642874329,iShares 20+ Year Treasury Bond ETF,TLT,Fixed Income,Treasury,ETF,USD,1
+US78468R6633,SPDR Bloomberg 1-3 Month T-Bill ETF,BIL,Fixed Income,Treasury,ETF,USD,1
+US4642874402,iShares 7-10 Year Treasury Bond ETF,IEF,Fixed Income,Treasury,ETF,USD,1
+US92206C7065,Vanguard Intermediate-Term Treasury Index Fund ETF Shares,VGIT,Fixed Income,Treasury,ETF,USD,1
+US46436E7186,iShares 0-3 Month Treasury Bond ETF,SGOV,Fixed Income,Treasury,ETF,USD,1
+US4642874576,iShares 1-3 Year Treasury Bond ETF,SHY,Fixed Income,Treasury,ETF,USD,1
 HK0000897014,BOCHK All Weather HKD Money Mkt A1 HKD,0P0001Q45W.HK,Cash,Cash,Fund,HKD,0.128205128205128

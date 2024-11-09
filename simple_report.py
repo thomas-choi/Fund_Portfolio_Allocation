@@ -28,19 +28,23 @@ def calculate_max_drawdown(df):
 #
 def simple_backtest(w, full_return, rm, obj, r_int):
     
-    mdf = pd.merge(full_return.reset_index()[['Date']], w, on='Date', how='left').ffill().round(5)
-    # display(mdf)
-    weights = mdf.drop(columns=['Date']).to_numpy()
-    print("weights array size: ", weights.shape)
-    # display(weights[-10:-1])
+    if w is not None:
+        mdf = pd.merge(full_return.reset_index()[['Date']], w, on='Date', how='left').ffill().round(5)
+        # display(mdf)
+        weights = mdf.drop(columns=['Date']).to_numpy()
+        print("weights array size: ", weights.shape)
+        # display(weights[-10:-1])
 
     Portfolio = full_return.reset_index().copy()
     # display(Portfolio)
     assets_names = Portfolio.drop(columns=['Date']).columns.to_list()
     # display(assets_names)
     
-    # Calculate portfolio daily returns
-    Portfolio['Return'] = (weights * Portfolio[assets_names]).sum(axis=1)
+    if w is not None:
+        # Calculate portfolio daily returns
+        Portfolio['Return'] = (weights * Portfolio[assets_names]).sum(axis=1)
+    else:
+        Portfolio['Return'] = (Portfolio[assets_names]).sum(axis=1)
     
     # Calculate portfolio value assuming initial investment of $100,000
     initial_investment = 100000
