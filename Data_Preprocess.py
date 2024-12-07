@@ -5,7 +5,7 @@ import numpy as np
 
 def IAM_data_setup(fn="IAM_product.txt"):
     product_master = pd.read_csv(fn)
-    
+    # display(product_master.head())
     product_master.dropna(axis='index', how='any', inplace=True)
     # display(product_master.head())
     
@@ -29,26 +29,17 @@ def download_IAM(inpath="IAM_full_data.txt"):
 
 def SelectIndex(price_in, mode, start_index):
     # Selecting last day of month of available data
-    index_Month = price_in.groupby([price_in.index.year, price_in.index.month]).tail(1).index
-    # print("Monthly: ", index_Month)
-    index_daily = price_in.index
-    # print("Daily: ", index_daily)
-
-    # Quarterly Dates
-    index_Quater = [x for x in index_Month if float(x.month) % 3.0 == 0 ] 
-    # print("Quarterly: ", index_Quater)
-
-    # Semi-Annually Dates
-    index_Semi = [x for x in index_Month if float(x.month) % 6.0 == 0 ] 
-    # print("Semi-Annually: ", index_Semi)
+    # index_Month = price_in.groupby([price_in.index.year, price_in.index.month]).tail(1).index
+    index_Month = price_in.index.to_series().groupby(price_in.index.to_period("M")).max().to_list()
 
     match mode:
-        case "Q": index=index_Quater
+        case "Q": index =  [x for x in index_Month if float(x.month) % 3.0 == 0 ] 
         case "M": index = index_Month
-        case "D": index = index_daily
-        case "S": index = index_Semi
+        case "D": index = price_in.index
+        case "S": index = [x for x in index_Month if float(x.month) % 6.0 == 0 ] 
+        case "W": index = price_in.index.to_series().groupby(price_in.index.to_period("W")).max().to_list()
     # Dates where the strategy will be backtested
-    index_ = [index_daily.get_loc(x) for x in index if index_daily.get_loc(x) >= start_index]
+    index_ = [price_in.index.get_loc(x) for x in index if price_in.index.get_loc(x) >= start_index]
     return index_
 
 ##

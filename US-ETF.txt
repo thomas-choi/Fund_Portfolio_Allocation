@@ -1,0 +1,19 @@
+Assets,Stock Name,Class,Sector,Type,Currency,Rate
+HYG,NoName,Fixed Income,Corporate,ETF,USD,1
+LQD,NoName,Fixed Income,Corporate,ETF,USD,1
+TLT,NoName,Fixed Income,Treasury,ETF,USD,1
+EFA,NoName,Equity,International,ETF,USD,1
+EWW,NoName,Equity,International,ETF,USD,1
+EWZ,NoName,Equity,International,ETF,USD,1
+GLD,NoName,Commodity,Metal,ETF,USD,1
+SLV,NoName,Commodity,Metal,ETF,USD,1
+XME,NoName,Commodity,Metal,ETF,USD,1
+XLE,NoName,Commodity,Energy,ETF,USD,1
+XOP,NoName,Commodity,Energy,ETF,USD,1
+DBA,NoName,Commodity,Agriculture,ETF,USD,1
+XBI,NoName,Equity,Healthcare,ETF,USD,1
+VNQ,NoName,Equity,Real Estate,ETF,USD,1
+XHB,NoName,Equity,Real Estate,ETF,USD,1
+IWM,NoName,Equity,US Market,ETF,USD,1
+QQQ,NoName,Equity,US Market,ETF,USD,1
+SPY,NoName,Equity,US Market,ETF,USD,1
