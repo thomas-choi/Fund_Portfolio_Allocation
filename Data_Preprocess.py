@@ -32,12 +32,16 @@ def SelectIndex(price_in, mode, start_index):
     # index_Month = price_in.groupby([price_in.index.year, price_in.index.month]).tail(1).index
     index_Month = price_in.index.to_series().groupby(price_in.index.to_period("M")).max().to_list()
 
-    match mode:
-        case "Q": index =  [x for x in index_Month if float(x.month) % 3.0 == 0 ] 
-        case "M": index = index_Month
-        case "D": index = price_in.index
-        case "S": index = [x for x in index_Month if float(x.month) % 6.0 == 0 ] 
-        case "W": index = price_in.index.to_series().groupby(price_in.index.to_period("W")).max().to_list()
+    if mode == "Q": 
+        index =  [x for x in index_Month if float(x.month) % 3.0 == 0 ] 
+    elif mode == "M": 
+        index = index_Month
+    elif mode == "D": 
+        index = price_in.index
+    elif mode == "S": 
+        index = [x for x in index_Month if float(x.month) % 6.0 == 0 ] 
+    elif mode == "W": 
+        index = price_in.index.to_series().groupby(price_in.index.to_period("W")).max().to_list()
     # Dates where the strategy will be backtested
     index_ = [price_in.index.get_loc(x) for x in index if price_in.index.get_loc(x) >= start_index]
     return index_
@@ -76,8 +80,11 @@ def calculate_date_range(data, n_list):
         n_i_data = data.loc[:, (slice(None), n)]
         n_i_data.columns = ['Adj Close','Close','High','Low','Open','Volume']
         rr = n_i_data.dropna(axis=0, how='all').copy()
-        display(rr)
-        intercept_dates.append({'Symbol':n, 'start':rr.index[0], "i_start": i_index.loc[rr.index[0]], 
-                                'end':rr.index[-1], 'i_end': i_index.loc[rr.index[-1]]})
+        print(rr)
+        if len(rr)>0:
+            intercept_dates.append({'Symbol':n, 'start':rr.index[0], "i_start": i_index.loc[rr.index[0]], 
+                                    'end':rr.index[-1], 'i_end': i_index.loc[rr.index[-1]]})
+        else:
+            print(f"** ERROR: {n} has no data")
 
     return pd.DataFrame(intercept_dates).set_index('Symbol')
