@@ -1,16 +1,15 @@
-# numpy<2.0.0
-# vectorbt[full]
-yfinance==0.2.44
+# yfinance==0.2.54
+yfinance==0.2.58
 notebook
-# ipywidgets>=7.5
-# investpy
-# PyPortfolioOpt
 riskfolio-lib
-# openpyxl
-# quantstats-lumi
-pandas==1.5.3
+# pandas<2.2
+pandas==2.2.3
 backtrader
-PyMySQL==1.0.2
-SQLAlchemy==1.4.46
+# PyMySQL==1.0.2
+PyMySQL==1.1.1
+# SQLAlchemy==1.4.46
+SQLAlchemy==2.0.40
 sshtunnel==0.4.0
-python-dotenv==0.21.1
+# python-dotenv==0.21.1
+python-dotenv==1.1.0
+lxml
