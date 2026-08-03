@@ -118,13 +118,28 @@ def get_Latest_row_by_Symbol(dbntable, symbol):
     except Exception as e:
         logging.error("Exception occurred at get_Latest_row_by_Symbol()", exc_info=True)
 
-def ExecSQL(query):
+def ExecSQL(query: str):
+    """
+    Execute a non-SELECT statement (INSERT/UPDATE/DELETE/TRUNCATE) and commit it.
+
+    SQLAlchemy 2.0 removed Engine.execute() along with implicit autocommit, so the
+    statement runs on a Connection inside an explicit transaction opened by
+    engine.begin(). exec_driver_sql() hands the string straight to the DBAPI driver,
+    which keeps ':' inside string literals (e.g. a JSON weights payload) from being
+    parsed as a bind parameter the way text() would.
+
+    Returns the affected row count, or None if the statement failed.
+    """
     logging.info(f"ExecSQL: {query}")
     try:
-        results = get_DBengine().execute(query)
-        logging.info(f'number of rows execed: {results.rowcount}')
+        with get_DBengine().begin() as conn:
+            results = conn.exec_driver_sql(query)
+            rowcount = results.rowcount
+        logging.info(f'number of rows execed: {rowcount}')
+        return rowcount
     except Exception as e:
-        logging.error("Exception occurred at load_df(np.linspace)", exc_info=True)
+        logging.error("Exception occurred at ExecSQL()", exc_info=True)
+        return None
 
 def load_df_SQL(query):
     """
